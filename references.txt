@@ -1,0 +1,3 @@
+https://github.com/Prinzhorn/skrollr
+https://stackoverflow.com/questions/25289028/issue-horizontal-scrolling-effect-with-skrollr
+http://jsfiddle.net/09wyzte5/
