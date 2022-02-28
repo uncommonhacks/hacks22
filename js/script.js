@@ -2,6 +2,8 @@ var img1 = new Image();
 
 var norm_width = window.innerWidth;
 var norm_factor = norm_width / 2048;
+let modal_objs = [];
+let buttons_first_activated = false;
 
 img1.src = "assets/panel_1_ver.png";
 img1.onload = function () {
@@ -49,22 +51,15 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
   let div = modal;
-  var Mwidth = div.offsetWidth;
-  var Mheight = div.offsetHeight;
-  var Wwidth = window.innerWidth;
-  var Wheight = window.innerHeight;
-  div.style.position = "absolute";
-  div.style.top =
-    (Wheight - Mheight) / 2 +
-    window.pageYOffset -
-    window.innerWidth * 0.06 +
-    "px";
-  div.style.left =
-    (Wwidth - Mwidth) / 2 +
-    window.pageXOffset -
-    window.innerWidth * 0.08 +
-    "px";
+  var w =
+    Math.max(document.documentElement.clientWidth, window.innerWidth || 0) /
+    100;
+  div.style.position = "relative";
+  div.style.top = w / 10 + "vw";
+  div.style.left = w + "vw";
   div.style.display = "block";
+  modal_objs.push(div);
+  console.log(modal_objs);
 };
 
 // When the user clicks on <span> (x), close the modal
@@ -73,11 +68,24 @@ span.onclick = function () {
 };
 
 // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
+window.onclick = function (event) {
+  if (
+    modal_objs.length > 0 &&
+    // buttons_clicked &&
+    !modal_objs.includes(event.target)
+  ) {
+    // console.log("yeet");
+    if (!buttons_first_activated) {
+      buttons_first_activated = true;
+      return;
+    }
+    while (modal_objs.length > 0) {
+      let curr = modal_objs.pop();
+      curr.style.display = "none";
+    }
+    buttons_first_activated = false;
+  }
+};
 
 // Get the modal
 var modal2 = document.getElementById("modal2");
@@ -91,23 +99,14 @@ var span2 = document.getElementsByClassName("close2")[0];
 // When the user clicks on the button, open the modal
 btn2.onclick = function () {
   let div = modal2;
-  var Mwidth = div.offsetWidth;
-  var Mheight = div.offsetHeight;
-  var Wwidth = window.innerWidth;
-  var Wheight = window.innerHeight;
-  div.style.position = "absolute";
-  //   console.log(Mwidth, window.innerWidth, window.innerHeight, "aiya");
-  div.style.top =
-    (Wheight - Mheight) / 2 +
-    window.pageYOffset -
-    window.innerWidth * 0.06 +
-    "px";
-  div.style.left =
-    (Wwidth - Mwidth) / 2 +
-    window.pageXOffset -
-    window.innerWidth * 0.08 +
-    "px";
+  var w =
+    Math.max(document.documentElement.clientWidth, window.innerWidth || 0) /
+    100;
+  div.style.position = "relative";
+  div.style.top = w / 10 + "vw";
+  div.style.left = w + "vw";
   div.style.display = "block";
+  modal_objs.push(div);
 };
 
 // When the user clicks on <span> (x), close the modal
@@ -128,22 +127,14 @@ var span3 = document.getElementsByClassName("close3")[0];
 // When the user clicks on the button, open the modal
 btn3.onclick = function () {
   let div = modal3;
-  var Mwidth = div.offsetWidth;
-  var Mheight = div.offsetHeight;
-  var Wwidth = window.innerWidth;
-  var Wheight = window.innerHeight;
-  div.style.position = "absolute";
-  div.style.top =
-    (Wheight - Mheight) / 2 +
-    window.pageYOffset -
-    window.innerWidth * 0.06 +
-    "px";
-  div.style.left =
-    (Wwidth - Mwidth) / 2 +
-    window.pageXOffset -
-    window.innerWidth * 0.08 +
-    "px";
+  var w =
+    Math.max(document.documentElement.clientWidth, window.innerWidth || 0) /
+    100;
+  div.style.position = "relative";
+  div.style.top = w / 10 + "vw";
+  div.style.left = w + "vw";
   div.style.display = "block";
+  modal_objs.push(div);
 };
 
 // When the user clicks on <span> (x), close the modal
@@ -163,22 +154,14 @@ var span4 = document.getElementsByClassName("close4")[0];
 // When the user clicks on the button, open the modal
 btn4.onclick = function () {
   let div = modal4;
-  var Mwidth = div.offsetWidth;
-  var Mheight = div.offsetHeight;
-  var Wwidth = window.innerWidth;
-  var Wheight = window.innerHeight;
-  div.style.position = "absolute";
-  div.style.top =
-    (Wheight - Mheight) / 2 +
-    window.pageYOffset -
-    window.innerWidth * 0.06 +
-    "px";
-  div.style.left =
-    (Wwidth - Mwidth) / 2 +
-    window.pageXOffset -
-    window.innerWidth * 0.08 +
-    "px";
+  var w =
+    Math.max(document.documentElement.clientWidth, window.innerWidth || 0) /
+    100;
+  div.style.position = "relative";
+  div.style.top = w / 10 + "vw";
+  div.style.left = w + "vw";
   div.style.display = "block";
+  modal_objs.push(div);
 };
 
 // When the user clicks on <span> (x), close the modal
