@@ -201,6 +201,33 @@ section::after {
   font-size: 2vw;
 }
 
+.chicken {
+  position: fixed;
+  top: 50vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: inherit;
+  background-image: url("assets/fog_left.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right{
+  position: absolute;
+  width: 100%;
+  right: 0;
+  height: inherit;
+  background-image: url("assets/fog_right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .map {
   /* background-color: black; */
   width: 100vw; /* Full width */
