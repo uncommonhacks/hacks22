@@ -54,8 +54,16 @@ btn.onclick = function () {
   var Wwidth = window.innerWidth;
   var Wheight = window.innerHeight;
   div.style.position = "absolute";
-  div.style.top = (Wheight - Mheight) / 2 + window.pageYOffset - 60 + "px";
-  div.style.left = (Wwidth - Mwidth) / 2 + window.pageXOffset - 120 + "px";
+  div.style.top =
+    (Wheight - Mheight) / 2 +
+    window.pageYOffset -
+    window.innerWidth * 0.06 +
+    "px";
+  div.style.left =
+    (Wwidth - Mwidth) / 2 +
+    window.pageXOffset -
+    window.innerWidth * 0.08 +
+    "px";
   div.style.display = "block";
 };
 
@@ -88,8 +96,17 @@ btn2.onclick = function () {
   var Wwidth = window.innerWidth;
   var Wheight = window.innerHeight;
   div.style.position = "absolute";
-  div.style.top = (Wheight - Mheight) / 2 + window.pageYOffset - 60 + "px";
-  div.style.left = (Wwidth - Mwidth) / 2 + window.pageXOffset - 120 + "px";
+  //   console.log(Mwidth, window.innerWidth, window.innerHeight, "aiya");
+  div.style.top =
+    (Wheight - Mheight) / 2 +
+    window.pageYOffset -
+    window.innerWidth * 0.06 +
+    "px";
+  div.style.left =
+    (Wwidth - Mwidth) / 2 +
+    window.pageXOffset -
+    window.innerWidth * 0.08 +
+    "px";
   div.style.display = "block";
 };
 
@@ -116,8 +133,16 @@ btn3.onclick = function () {
   var Wwidth = window.innerWidth;
   var Wheight = window.innerHeight;
   div.style.position = "absolute";
-  div.style.top = (Wheight - Mheight) / 2 + window.pageYOffset - 60 + "px";
-  div.style.left = (Wwidth - Mwidth) / 2 + window.pageXOffset - 120 + "px";
+  div.style.top =
+    (Wheight - Mheight) / 2 +
+    window.pageYOffset -
+    window.innerWidth * 0.06 +
+    "px";
+  div.style.left =
+    (Wwidth - Mwidth) / 2 +
+    window.pageXOffset -
+    window.innerWidth * 0.08 +
+    "px";
   div.style.display = "block";
 };
 
@@ -143,8 +168,16 @@ btn4.onclick = function () {
   var Wwidth = window.innerWidth;
   var Wheight = window.innerHeight;
   div.style.position = "absolute";
-  div.style.top = (Wheight - Mheight) / 2 + window.pageYOffset - 60 + "px";
-  div.style.left = (Wwidth - Mwidth) / 2 + window.pageXOffset - 120 + "px";
+  div.style.top =
+    (Wheight - Mheight) / 2 +
+    window.pageYOffset -
+    window.innerWidth * 0.06 +
+    "px";
+  div.style.left =
+    (Wwidth - Mwidth) / 2 +
+    window.pageXOffset -
+    window.innerWidth * 0.08 +
+    "px";
   div.style.display = "block";
 };
 

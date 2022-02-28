@@ -129,44 +129,106 @@
   cursor: pointer;
 }
 
-.button1 {
+section {
+  background: rgb(146, 187, 187);
+  padding: 2rem 3vw;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+  height: auto;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 1rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: rgb(233, 241, 241);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.bullet {
+  color: teal;
+  font-weight: bold;
+  margin-right: 0.25rem;
+}
+.about {
+  color: black;
   position: absolute;
-  top: 163%;
-  left: 14%;
-  width: 22%; /* Full width */
-  height: 17%; /* Full height */
-  background-color: transparent;
+  top: 185vw;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  font-size: 2vw;
+}
+
+.map {
+  /* background-color: black; */
+  width: 100vw; /* Full width */
+  height: 50vh; /* Full height */
+  position: absolute;
+  top: 65vw;
 }
 
 .button1 {
-  position: absolute;
-  top: 163%;
-  left: 14%;
-  width: 22%; /* Full width */
-  height: 17%; /* Full height */
+  position: relative;
+  top: 14vw;
+  left: 14vw;
+  width: 21vw; /* Full width */
+  height: 8vw; /* Full height */
   background-color: transparent;
 }
 .button2 {
-  position: absolute;
-  top: 161%;
-  left: 57%;
-  width: 18%; /* Full width */
-  height: 17%; /* Full height */
+  position: relative;
+  top: 13vw;
+  left: 35vw;
+  width: 18vw; /* Full width */
+  height: 8vw; /* Full height */
   background-color: transparent;
 }
 .button3 {
-  position: absolute;
-  top: 207%;
-  left: 21%;
-  width: 19%; /* Full width */
-  height: 17%; /* Full height */
+  position: relative;
+  top: 35vw;
+  left: -20vw;
+  width: 20vw; /* Full width */
+  height: 8vw; /* Full height */
   background-color: transparent;
 }
 .button4 {
-  position: absolute;
-  top: 207%;
-  left: 67%;
-  width: 16.5%; /* Full width */
-  height: 17%; /* Full height */
+  position: relative;
+  top: 35vw;
+  left: 6vw;
+  width: 17vw; /* Full width */
+  height: 8vw; /* Full height */
   background-color: transparent;
 }
