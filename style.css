@@ -15,10 +15,10 @@
 
 #panel1{
   background-image: url("assets/panel_1_ver.png");
-  background-size: 100% ;
+  background-size: cover;
   background-repeat: no-repeat;
   width:100%;
-  height:141vw;
+  height:140vw;
   margin: 0px 0px 0px 0px;
 }
 
@@ -26,8 +26,8 @@
   background-image: url("assets/panel_2_hor.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width:149vh;
-  height:100%;
+  width:100%;
+  height:67.2vw;
   margin: 0px 0px 0px 0px;
 }
 

@@ -28,7 +28,8 @@ var img2 = new Image();
 
 img2.src = "assets/panel_2_hor.png";
 img2.onload = function(){
-
+    console.log("chicken");
+    console.log(img2.width/img1.width);
     console.log("norm_fact")
     console.log(norm_factor);
     var height = img2.height;
@@ -36,7 +37,7 @@ img2.onload = function(){
     console.log("weiner");
     console.log(width/height);
     // code here to use the dimensions
-    document.getElementById("panel2").style.height=height*norm_factor;
-    document.getElementById("panel2").style.width=width*norm_factor;
+    // document.getElementById("panel2").style.height=height*norm_factor;
+    // document.getElementById("panel2").style.width=width*norm_factor;
     //   document.getElementById("panel1").style.width=height;
 };
