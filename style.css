@@ -22,11 +22,21 @@
 }
 
 #panel2 {
-  background-image: url("assets/panel_2_hor.png");
+  background-image: url("assets/panel_horizontal_long.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 170%;
+  height: 67.2vw;
+}
+
+#panel3 {
+  background-image: url("assets/panel_4_ver.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 67.2vw;
+  height: 200vw;
+  margin-top: 1000px;
+  /* transform:translate3d(0,67.2vw,0px); */
 }
 
 /* The Modal (background) */
