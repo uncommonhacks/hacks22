@@ -38,7 +38,7 @@
   height: 600vw;
   /* opacity: 0.5; */
   position: relative;
-  margin-top:750px;
+  margin-top: 750px;
   z-index: -1;
 }
 
@@ -155,7 +155,7 @@
 }
 
 section {
-  background: rgb(146, 187, 187);
+  background: grey;
   padding: 2rem 3vw;
 }
 
@@ -204,7 +204,7 @@ section::after {
   transition: max-height 0.2s ease-out;
 }
 .bullet {
-  color: teal;
+  color: gray;
   font-weight: bold;
   margin-right: 0.25rem;
 }
@@ -215,6 +215,7 @@ section::after {
   padding-left: 7vw;
   padding-right: 7vw;
   font-size: 2vw;
+  background-color: gray;
 }
 
 .chicken {
@@ -224,7 +225,7 @@ section::after {
   height: 100vh;
 }
 
-.left{
+.left {
   position: absolute;
   width: 100%;
   left: 0;
@@ -234,7 +235,7 @@ section::after {
   background-repeat: no-repeat;
 }
 
-.right{
+.right {
   position: absolute;
   width: 100%;
   right: 0;
@@ -283,4 +284,22 @@ section::after {
   width: 17vw; /* Full width */
   height: 8vw; /* Full height */
   background-color: transparent;
+}
+
+.headshots {
+  height: 60vw;
+  width: 60vw;
+}
+.team {
+  position: absolute;
+  top: 540vw;
+  left: 20vw;
+  font-size: larger;
+}
+.faq {
+  position: absolute;
+  top: 400vw;
+  font-size: larger;
+  width: 60vw;
+  left: 18vw;
 }

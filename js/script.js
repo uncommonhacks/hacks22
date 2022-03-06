@@ -168,3 +168,34 @@ btn4.onclick = function () {
 span4.onclick = function () {
   modal4.style.display = "none";
 };
+
+let headShotsList = [
+  "assets/member_photos/antonoutkine.jpg",
+  "assets/member_photos/emilybae.jpeg",
+  "assets/member_photos/irinastamm.jpeg",
+  "assets/member_photos/jimliu.jpg",
+  "assets/member_photos/joeaulicino.jpeg",
+  "assets/member_photos/katelu.jpg",
+  "assets/member_photos/madhavvats.jpg",
+  "assets/member_photos/michellechen.jpg",
+  "assets/member_photos/nickliu.png",
+  "assets/member_photos/nicoleli.jpg",
+  "assets/member_photos/palashgoiporia.JPG",
+  "assets/member_photos/reneehuang.jpeg",
+  "assets/member_photos/samanthachen.JPG",
+  "assets/member_photos/spencerng.jpg",
+];
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+let currentPicture = getRandomInt(headShotsList.length);
+let headShot = document.getElementById("headshots");
+
+headShot.setAttribute("src", headShotsList[currentPicture]);
+setInterval(() => {
+  currentPicture =
+    currentPicture == headShotsList.length - 1 ? 0 : currentPicture + 1;
+  headShot.setAttribute("src", headShotsList[currentPicture]);
+}, 2000);
