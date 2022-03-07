@@ -10,30 +10,40 @@ img1.onload = function () {
   // norm_width = document.getElementById("panel1").style.inner;
   var height = img1.height;
   var width = img1.width;
-  // console.log(height/width);
-  // console.log(height);
-  console.log(norm_width);
+  // //console.log(height/width);
+  // //console.log(height);
+  //console.log(norm_width);
   norm_factor = norm_width / width;
-  console.log("normy");
-  console.log(norm_factor);
+  //console.log("normy");
+  //console.log(norm_factor);
   // code here to use the dimensions
   // document.getElementById("panel1").style.height=height/width*norm_width;
-  console.log(document.getElementById("panel1").style.height);
+  //console.log(document.getElementById("panel1").style.height);
   //   document.getElementById("panel1").style.width=height;
 };
+
+var img3 = new Image();
+
+img3.src = "assets/panel_3_and_4_waterfall_cave.png";
+img3.onload = function () {
+  var height = img3.height;
+  var width = img3.width;
+  // console.log(height/width);
+};
+
 
 var img2 = new Image();
 
 img2.src = "assets/panel_2_hor.png";
 img2.onload = function () {
-  console.log("chicken");
-  console.log(img2.width / img1.width);
-  console.log("norm_fact");
-  console.log(norm_factor);
+  //console.log("chicken");
+  //console.log(img2.width / img1.width);
+  //console.log("norm_fact");
+  //console.log(norm_factor);
   var height = img2.height;
   var width = img2.width;
-  console.log("weiner");
-  console.log(width / height);
+  //console.log("weiner");
+  //console.log(width / height);
   // code here to use the dimensions
   // document.getElementById("panel2").style.height=height*norm_factor;
   // document.getElementById("panel2").style.width=width*norm_factor;
@@ -59,7 +69,7 @@ btn.onclick = function () {
   div.style.left = w + "vw";
   div.style.display = "block";
   modal_objs.push(div);
-  console.log(modal_objs);
+  //console.log(modal_objs);
 };
 
 // When the user clicks on <span> (x), close the modal
@@ -74,7 +84,7 @@ window.onclick = function (event) {
     // buttons_clicked &&
     !modal_objs.includes(event.target)
   ) {
-    // console.log("yeet");
+    // //console.log("yeet");
     if (!buttons_first_activated) {
       buttons_first_activated = true;
       return;
@@ -111,7 +121,7 @@ btn2.onclick = function () {
 
 // When the user clicks on <span> (x), close the modal
 span2.onclick = function () {
-  console.log("sad");
+  //console.log("sad");
   modal2.style.display = "none";
 };
 
