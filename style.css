@@ -13,27 +13,30 @@
 }
 
 #panel1 {
-  background-image: url("assets/panel_1_final.png");
+  background-image: url("assets/panel_1_small.png");
   background-size: cover;
   background-repeat: no-repeat;
+  image-rendering: pixelated;
   width: 100%;
   height: 140vw;
   margin: 0px 0px 0px 0px;
 }
 
 #panel2 {
-  background-image: url("assets/panel_2_final.png");
+  background-image: url("assets/panel_2_small.png");
   background-size: cover;
   background-repeat: no-repeat;
+  image-rendering: pixelated;
   width: 200%;
   height: 67.2vw;
   margin: 0px 0px 0px 0px;
 }
 
 #panel2v {
-  background-image: url("assets/panel_3_ver_final.png");
+  background-image: url("assets/panel_3_small.png");
   background-size: cover;
   background-repeat: no-repeat;
+  image-rendering: pixelated;
   width: 100%;
   height: 478.1vw;
   /* opacity: 0.5; */
