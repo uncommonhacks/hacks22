@@ -45,6 +45,8 @@
 .schedule{
   position:absolute;
   top: 2vh;
+  color: white;
+  text-shadow: rgb(131, 145, 151) 0 0 8vw;
   font-size: 2.2vw;
   line-height: 1.2;
 }
@@ -227,7 +229,7 @@ section::after {
   margin-right: 0.25rem;
 }
 .about {
-  color: black;
+  color: white;
   position: absolute;
   bottom: 17vw;
   padding-left: 7vw;
@@ -375,14 +377,15 @@ section::after {
   }
 
 .headshots {
-    height: 60vw;
-    width: 60vw;
+    height: 30vw;
+    width: 30vw;
   }
 
   .team {
     position: absolute;
-    top: calc(750px + 410vw);
+    top: calc(650px + 410vw);
     left: 10vw;
+    color: white;
     font-size: larger;
   }
 
