@@ -321,14 +321,40 @@ section::after {
     font-size: 6vw;
     color: white;
     text-shadow: rgb(117, 131, 133) 0.2vw 0.2vw;
-    font-feature-settings: "salt" 1;
     letter-spacing: 0.5vw;
 }
 
-#hacks22_title {
+#title_wrapper {
+    text-align: right;
+    position: absolute;
+    top: 10vw;
+    right: 21vw;
+}
+
+#title_uncommon {
     font-family: "Heubeul Rough";
+    font-size: 15.4vw;
+    text-shadow: rgb(140, 159, 161) 0.5vw 0.5vw;
     color: white;
-    font-feature-settings: "salt" 5;
+}
+
+#title_hacks {
+    position: relative;
+    bottom: 1.5vw;
+    font-family: "Heubeul Rough";
+    font-size: 14vw;
+    text-shadow: rgb(140, 159, 161) 0.5vw 0.5vw;
+    color: white;
+}
+
+#title_year {
+    position: relative;
+    bottom: 7vw;
+    right: 36vw;
+    font-family: "Rockwell";
+    font-size: 7vw;
+    text-shadow: rgb(140, 159, 161) 0.5vw 0.5vw;
+    color: rgb(227, 248, 248);
 }
 
 #tracks {
@@ -369,7 +395,7 @@ section::after {
 
 /* OpenType Stylistic Alternates */
 .salt,
-.salt-1 { font-feature-settings: "salt"; }
-.salt-2 { font-feature-settings: "salt" 2; }
-.salt-3 { font-feature-settings: "salt" 3; }
-.salt-4 { font-feature-settings: "salt" 4; }
+.underline { font-feature-settings: "ss09"; }
+.righthook { font-feature-settings: "ss05"; }
+.lefthook { font-feature-settings: "ss06"; }
+.shape { font-feature-settings: "ss11"; }
