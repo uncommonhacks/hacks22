@@ -13,7 +13,7 @@
 }
 
 #panel1 {
-  background-image: url("assets/panel_1_ver.png");
+  background-image: url("assets/panel_1_final.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -22,7 +22,7 @@
 }
 
 #panel2 {
-  background-image: url("assets/panel_horizontal_long.png");
+  background-image: url("assets/panel_2_final.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 200%;
@@ -31,7 +31,7 @@
 }
 
 #panel2v {
-  background-image: url("assets/panel_3_and_4_waterfall_cave.png");
+  background-image: url("assets/panel_3_ver_final.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -44,7 +44,7 @@
 
 .schedule{
   position:absolute;
-  top: 2vh;
+  top: 5vw;
   color: white;
   text-shadow: rgb(131, 145, 151) 0 0 8vw;
   font-size: 2.2vw;
@@ -231,11 +231,11 @@ section::after {
 .about {
   color: white;
   position: absolute;
-  bottom: 17vw;
+  top: 32vw;
   padding-left: 7vw;
   padding-right: 7vw;
-  font-size: 2vw;
-  width:70vw;
+  font-size: min(1.75vw, 1.2rem);
+  width:85vw;
 }
 
 
@@ -324,6 +324,7 @@ section::after {
     color: white;
     text-shadow: rgb(117, 131, 133) 0.2vw 0.2vw;
     letter-spacing: 0.5vw;
+    margin-bottom: 1vw;
 }
 
 #title_wrapper {
@@ -362,7 +363,11 @@ section::after {
 #tracks {
     position: absolute;
     top: 55vw;
-    left: 10vw;
+    left: 7vw;
+}
+
+#map {
+    width: 86vw;
 }
 
 #faq_section {
