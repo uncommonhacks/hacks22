@@ -1,3 +1,7 @@
+body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 #container {
   background-color: black;
   width: 100%;
@@ -30,8 +34,11 @@
   width: 200%;
   height: 67.2vw;
   margin: 0px 0px 0px 0px;
+  overflow-x:hidden;
+  /* new stuff */
+  /* transform: rotate(-90deg);
+  transform-origin: right top; */
 }
-
 #panel2v {
   background-image: url("assets/panel_3_small.png");
   background-size: cover;
@@ -52,6 +59,7 @@
   text-shadow: rgb(131, 145, 151) 0 0 8vw;
   font-size: 2.2vw;
   line-height: 1.2;
+  overflow-y:hidden;
 }
 
 #schedule_top {
@@ -239,6 +247,7 @@ section::after {
   padding-right: 7vw;
   font-size: min(1.75vw, 1.2rem);
   width:85vw;
+  overflow-y:hidden;
 }
 
 
