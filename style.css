@@ -196,6 +196,32 @@ section::after {
   clear: both;
   height: auto;
 }
+#signups {
+  /* text-align: center; */
+  margin:auto;
+  top: 45vw;
+  position: absolute;
+  width: 50%;
+  width: 47vw;
+  transform: translateX(28vw);
+}
+.signup_button {
+  border: none;
+  background-color:rgb(119, 182, 195);
+  color: white;
+  padding: 1rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family:"Arial"
+  /* font-family: "Heubeul Rough";; */
+  font-size: 16px;
+  margin: 4px 2px;
+  /* transition-duration: 0.2s;
+  cursor: pointer; */
+  border-radius: 12px;
+}
+
 .button {
   border: none;
   color: white;
