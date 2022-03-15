@@ -24,7 +24,7 @@ window.addEventListener("scroll", function(){
             var gap = vh(100)- vw(67.2);
             var offset = pos - top;
 
-            console.log(offset)
+            // console.log(offset)
             if (offset <= 0) {
                 target[i].style.opacity=0;
             }
@@ -32,7 +32,7 @@ window.addEventListener("scroll", function(){
                 target[i].style.opacity=1;
             }
             else {
-                console.log("light");
+                // console.log("light");
                 target[i].style.opacity=1-(offset-750-gap)/50;
             }
         }

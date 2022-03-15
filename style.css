@@ -468,6 +468,7 @@ section::after {
   left: 10vw;
   font-size: larger;
 }
+
 #imc{
   margin-top:4vw;
   width:75vw;
@@ -485,7 +486,12 @@ section::after {
   margin-top:0vw;
   width:30vw;
 }
-
+#contacts {
+  position: absolute;
+  top: calc(750px + 590vw);
+  left: 10vw;
+  font-size: larger;
+}
 
 /* OpenType Stylistic Alternates */
 .salt,
