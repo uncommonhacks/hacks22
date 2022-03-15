@@ -1,7 +1,17 @@
+html {
+  height: 100%;
+}
 body {
   max-width: 100%;
   overflow-x: hidden;
+  min-height: 100%; 
 }
+
+.contact{
+  width:10vw;
+  margin: 2vw;
+}
+
 #container {
   background-color: black;
   width: 100%;
