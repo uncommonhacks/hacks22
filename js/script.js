@@ -108,6 +108,7 @@ var span2 = document.getElementsByClassName("close2")[0];
 
 // When the user clicks on the button, open the modal
 btn2.onclick = function () {
+  // console.log("AA");
   let div = modal2;
   var w =
     Math.max(document.documentElement.clientWidth, window.innerWidth || 0) /

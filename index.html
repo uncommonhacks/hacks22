@@ -3,7 +3,18 @@
   <head>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg" alt="Major League Hacking 2022 Hackathon Season" style="width:100%"></a>
   <body style="margin:0">
+    <div id="signups-invisible" class="signups">
+      <a class="signup_button" id="university" href="https://bit.ly/ApplyHacks2022HS">
+        University<br>
+          Registration
+      </a>
+
+      <a class="signup_button" id="highschool" href="https://bit.ly/ApplyHacks2022">
+        High School<br>
+          Registration</a>
+    </div> 
   <div id="panel1">
       <div id="title_wrapper">
         <div id="title_uncommon">Unc<sid="underline">o</span>m<span class="righthook">m</span>o<span class="lefthook">n</span>
@@ -11,18 +22,18 @@
         <div id="title_hacks">H<span class="shape">a</span>cks</div>
         <div id="title_year">2022</div>
       </div>
-      <div id="signups">
+      <div class="signups">
         <a class="signup_button" id="university" href="https://bit.ly/ApplyHacks2022HS">
           University<br>
             Registration
         </a>
-
+  
         <a class="signup_button" id="highschool" href="https://bit.ly/ApplyHacks2022">
           High School<br>
             Registration</a>
       </div> 
     <div id="tracks">
-        <div class="section_heading">Tracks</div>
+        <div class="section_heading" id="tracks_heading">Tracks</div>
         <img id="map" src="assets/map.png" alt="">
     </div>
   </div>
@@ -197,10 +208,10 @@
   </div>
 
   <div id="faq_section">
-    <div class="section_heading">Faq</div>
-    <section class="faq">
+    <div class="section_heading" id="faq-header">Faq</div>
+    <div id="faq">
     
-        <nav>
+        <nav id="left_faq">
           <button type="button" class="collapsible">
             <span class="bullet">+</span> what's a hackathon?
           </button>
@@ -271,9 +282,6 @@
               with e-love.
             </p>
           </div>
-        </nav>
-    
-        <article>
           <button type="button" class="collapsible">
             <span class="bullet">+</span> what does the application process and
             timeline look like?
@@ -311,6 +319,10 @@
               >.
             </p>
           </div>
+        </nav>
+    
+        <article id="right_faq">
+          
           <button type="button" class="collapsible">
             <span class="bullet">+</span> what if I'm new to coding?
           </button>
@@ -354,7 +366,7 @@
           </div>
           
         </article>
-      </section>
+      </div>
   </div>
 
   <div class="team">
@@ -413,6 +425,17 @@
     var i;
     for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function () {
+        //turn off other faqs
+        for (j=0; j < coll.length; j++){
+          if (j != i) {
+            console.log("removing");
+            coll[j].classList.remove("active");
+            var content =  coll[j].nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            }
+          }
+        }
         this.classList.toggle("active");
         var content = this.nextElementSibling;
         if (content.style.maxHeight) {

@@ -112,7 +112,7 @@ body {
 .modal {
   display: none; /* Hidden by default */
   /*position: absolute; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 100; /* Sit on top */
   /* left: 0; */
   /* top: 0; */
   /*width: 100%; /* Full width */
@@ -122,18 +122,21 @@ body {
   /*background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   /*top: 100%;*/
 }
-
+#tracks_heading{
+  margin-bottom:5vw;
+}
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   position: fixed;
-  top: 40vh;
+  top: 20vh;
   left: 33vw;
   /* margin: 15% auto; 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 35%; /*Could be more or less, depending on screen size*/
-  height: 30%; /*Could be more or less, depending on screen size*/
+  height: 45%; /*Could be more or less, depending on screen size*/
+  font-family: "Rockwell";
 }
 
 /* The Close Button */
@@ -222,7 +225,7 @@ section::after {
   clear: both;
   height: auto;
 }
-#signups {
+.signups {
   /* text-align: center; */
   /* margin:auto; */
   top: 47vw;
@@ -230,6 +233,18 @@ section::after {
   /* width: 50%; */
   /* width: vw; */
   left: 32vw;
+  /* z-index:15; */
+}
+#signups-invisible {
+  /* text-align: center; */
+  /* margin:auto; */
+  top: 47vw;
+  position: absolute;
+  /* width: 50%; */
+  /* width: vw; */
+  left: 32vw;
+  z-index:15;
+  opacity:0;
 }
 #university{
   margin-right:1em;
@@ -276,6 +291,7 @@ section::after {
   text-align: left;
   outline: none;
   font-size: 15px;
+  font-family: "Rockwell";
 }
 
 .active,
@@ -313,6 +329,7 @@ section::after {
   top: 50vh;
   width: 100vw;
   height: 50vh;
+  z-index:6;
 }
 
 .left {
@@ -340,7 +357,8 @@ section::after {
   width: 100vw; /* Full width */
   height: 50vh; /* Full height */
   position: absolute;
-  top: 65vw;
+  top: 75vw;
+  z-index: 100;
 }
 
 .button1 {
@@ -430,7 +448,7 @@ section::after {
 
 #tracks {
   position: absolute;
-  top: 55vw;
+  top: 65vw;
   left: 7vw;
 }
 
@@ -440,14 +458,27 @@ section::after {
 
 #faq_section {
   position: absolute;
-  top: calc(300px + 310vw);
-  padding: 10vw;
+  top: calc(750px + 280vw);
+  /* padding: 10vw; */
+  z-index: 50;
+  font-family: "Rockwell";
 }
 
-.faq {
+#faq {
+  margin-top: 5vw;
   font-size: larger;
-  width: 60vw;
+  width: 100vw;
+  /* position: absolute; */
+  /* top: 20vw; */
+  /* left: 10vw; */
+  z-index:50;
 }
+/* #left_faq {
+ width:50vw;
+}
+#right_faq {
+  width:50vw;
+} */
 
 .headshots {
   height: 40vw;
