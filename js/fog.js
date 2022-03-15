@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function(){
-    console.log("scrolling");
+    // console.log("scrolling");
     var target=document.querySelectorAll('.par');
     var i=0, len=target.length;
         for(i; i<len; i++){
