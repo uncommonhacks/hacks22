@@ -46,7 +46,6 @@ body {
   width: 200%;
   height: 67.2vw;
   margin: 0px 0px 0px 0px;
-  overflow-x: hidden;
   /* new stuff */
   /* transform: rotate(-90deg);
   transform-origin: right top; */
@@ -82,7 +81,6 @@ body {
   position: absolute;
   top: 5vw;
   color: white;
-  text-shadow: rgb(131, 145, 151) 0 0 8vw;
   font-family:"Rockwell";
   font-size: 2.2vw;
   line-height: 1.2;
