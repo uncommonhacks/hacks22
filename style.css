@@ -498,6 +498,7 @@ section::after {
   top: calc(750px + 490vw);
   left: 10vw;
   font-size: larger;
+  z-index:100;
 }
 
 #imc{
