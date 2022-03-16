@@ -5,11 +5,6 @@ var norm_factor = norm_width / 2048;
 let modal_objs = [];
 let buttons_first_activated = false;
 
-var s = skrollr.init();
-if (s.isMobile()) {
-    s.destroy();
-}
-
 img1.src = "assets/panel_1_ver.png";
 img1.onload = function () {
   // norm_width = document.getElementById("panel1").style.inner;
