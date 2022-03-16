@@ -8,6 +8,9 @@ function vh(v) {
     return (v * h) / 100;
   }
 window.addEventListener("scroll", function(){
+    if (screen.width < 800) {
+        return;
+    }
     var target=document.querySelectorAll('.cover');
     var i=0, len=target.length;
         for(i; i<len; i++){
