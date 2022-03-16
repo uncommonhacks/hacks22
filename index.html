@@ -2,9 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
   </head>
   <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg" alt="Major League Hacking 2022 Hackathon Season" style="width:100%"></a>
   <body style="margin:0">
+    <!-- <div id="cover_panel" class="cover" data-rate="1"></div> -->
+  
     <div id="signups-invisible" class="signups">
         <div style="text-align: center;">
             <a class="signup_button" id="university" href="https://bit.ly/ApplyHacks2022HS">
@@ -18,6 +21,7 @@
         </div>
     </div> 
   <div id="panel1">
+    
       <div id="title_wrapper">
         <div id="title_uncommon">Unc<sid="underline">o</span>m<span class="righthook">m</span>o<span class="lefthook">n</span>
         </div>
@@ -39,9 +43,9 @@
         <img id="map" src="assets/map.png" alt="">
     </div>
   </div>
-    <div id="cover_panel" class="cover" data-rate="1"></div>
     <div
       id="panel2"
+      class="desktop"
       data-1-top="position:relative;"
       data-top="transform:translate3d(0%,0,0);position:fixed;top:0"
       data--750-top="transform:translate3d(-50%,0,0);opacity:1"
@@ -100,7 +104,7 @@
       data-top="transform:translate3d(0%,0px,0px);"
       data--1000-top="transform:translate3d(0%,1000px,0px)"> -->
       <div id="schedule" class="schedule">
-      <div class="section_heading">Schedule</div>
+      <div class="section_heading" id="schedule_heading">Schedule</div>
       FRIDAY APRIL 1ST
       <ul>
         <li>5:00 PM - CSS still life</li>
@@ -121,7 +125,6 @@
         <li>7:00 PM - mystery event</li>
         <li>8:00 PM - dinner/social time</li>
       </ul>
-
       SUNDAY APRIL 3RD
       <ul>
         <li>9:00 AM - morning meditation</li>
@@ -131,13 +134,14 @@
         <li>2:30 PM – project expo + judging</li>
         <li>4:30 PM – closing ceremony + awards</li>
       </ul>
+    </div>
 
     </div>
     
     
     </div>
     <!-- <div id="panel3"></div> -->
-  </div>
+
 
   <div id="myModal" class="modal">
     <!-- Modal content -->
@@ -412,6 +416,7 @@
   <a target="_blank" href="https://twitter.com/uncommonhacks"><img class="contact" src="https://i0.wp.com/libertycitykings.files.wordpress.com/2012/01/114179-glowing-purple-neon-icon-social-media-logos-twitter-logo-square.png?h=250" ></a>
 
   </div>
+<!-- skrollr end wrapper -->
   
 </body>
   <script type="text/javascript" src="js/skrollr.min.js"></script>
@@ -419,9 +424,6 @@
   <script type="text/javascript" src="js/fog.js"></script>
   <script type="text/javascript" src="js/cover.js"></script>
 
-  <script type="text/javascript">
-    var s = skrollr.init();
-  </script>
   <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;

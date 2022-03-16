@@ -53,6 +53,7 @@ body {
   z-index:5;
   position: relative;
 }
+
 #cover_panel{
   position: fixed;
   background-color: black;
@@ -105,6 +106,7 @@ body {
   height: 200vw;
   /* transform:translate3d(0,67.2vw,0px); */
 }
+
 
 /* The Modal (background) */
 .modal {
@@ -570,4 +572,58 @@ section::after {
 }
 .shape {
   font-feature-settings: "ss11";
+}
+/* 
+@media screen and (max-width: 600px) {
+  #panel2 {
+    width:100%;
+  }
+} */
+
+/*** DESKTOP ***/
+/* @media (min-device-width: 800px) and (min-width: 800px) {
+  #panel2{
+    display:none;
+    opacity:0;
+  }
+} */
+
+@media (max-width: 800px) {
+  #panel2{
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }
+  #panel2v{
+    margin-top:0;
+  }
+  #faq_section{
+    top:350vw;
+  }
+  .team{
+    top:460vw;
+  }
+  #sponsors{
+    top:560vw;
+  }
+  #contacts{
+    top:660vw;
+  }
+  .about{
+    font-size: min(3vw, 2rem);
+    margin-top:10vw;
+    background:rgba(170, 108, 61, .8);
+  }
+  .schedule{
+    font-size: 3.25vw;
+    line-height: 1.2;
+    background:rgba(170, 108, 61, .8);
+    padding:5vw;
+  }
+  #schedule{
+    left:24vw;
+  }
+  #schedule_heading {
+    margin-bottom:5vw;
+  }
 }
