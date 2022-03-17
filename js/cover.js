@@ -8,7 +8,7 @@ function vh(v) {
     return (v * h) / 100;
   }
 window.addEventListener("scroll", function(){
-    if (screen.width < 800) {
+    if (screen.width < 912) {
         return;
     }
     var target=document.querySelectorAll('.cover');

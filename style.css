@@ -288,7 +288,7 @@ section::after {
   background-color: white;
   color: black;
   cursor: pointer;
-  padding: 18px;
+  padding: 2vw;
   width: 100%;
   border: none;
   text-align: left;
@@ -426,6 +426,12 @@ section::after {
 .button4:hover {
     cursor: pointer;
     background-color: rgb(255, 255, 255, 0.5);
+}
+
+#meetTeam {
+  font-family: "Rockwell";
+  font-size:3vw;
+  margin-top:4vw;
 }
 
 @font-face {
@@ -588,7 +594,12 @@ section::after {
   }
 } */
 
-@media (max-width: 800px) {
+@media (max-width: 912px) {
+  .chicken {
+    /* top:calc(100vh- 70vw);
+    height:70vw; */
+    display:none;
+  }
   #cover_panel {
     display:none;
   }

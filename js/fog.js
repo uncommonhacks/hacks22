@@ -1,11 +1,11 @@
 var s = skrollr.init();
-if (s.isMobile() || (window.Width < 800)) {
+if (s.isMobile() || (window.Width < 913)) {
     s.destroy();
 }
 
 window.addEventListener("scroll", function(){
     console.log(window.innerWidth)
-    if (s.isMobile() || (window.innerWidth < 800)) {
+    if (s.isMobile() || (window.innerWidth < 913)) {
         s.destroy();
     }
     else {
