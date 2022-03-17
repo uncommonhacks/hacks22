@@ -5,6 +5,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   min-height: 100%; 
+  background-color: rgb(245, 222, 151);
 }
 
 .contact{
@@ -73,9 +74,9 @@ body {
   width: 100%;
   height: 478.1vw;
   /* opacity: 0.5; */
-  position: relative;
+  position: absolute;
   margin-top: 750px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .schedule {
@@ -498,10 +499,15 @@ section::after {
 
 #faq_section {
   position: absolute;
-  top: calc(750px + 280vw);
+  top: calc(750px + 80vw);
+  
   /* padding: 10vw; */
   z-index: 50;
   font-family: "Rockwell";
+  /* margin: 10vw; */
+}
+#faq-header {
+  margin-left: 10vw;
 }
 
 #faq {
@@ -527,7 +533,8 @@ section::after {
 
 .team {
   position: absolute;
-  top: calc(650px + 410vw);
+  top: calc(650px + 200vw);
+  width:50vw;
   left: 10vw;
   color: white;
   font-size: larger;
@@ -536,7 +543,7 @@ section::after {
 
 #sponsors {
   position: absolute;
-  top: calc(750px + 490vw);
+  top: calc(750px + 280vw);
   left: 10vw;
   font-size: larger;
   z-index:100;
@@ -561,7 +568,7 @@ section::after {
 }
 #contacts {
   position: absolute;
-  top: calc(750px + 590vw);
+  top: calc(750px + 370vw);
   left: 10vw;
   font-size: larger;
   z-index: 100;
@@ -620,18 +627,27 @@ section::after {
   }
   #panel2v{
     margin-top:0;
+    position:relative;
   }
   #faq_section{
-    top:350vw;
+    /* top:350vw; */
+    position:relative;
+    top:10vw;
   }
   .team{
-    top:460vw;
+    top:20vw;
+    position:relative;
+    width:50vw;
   }
   #sponsors{
-    top:560vw;
+    top:55vw;
+    position:relative;
+    width:60vw;
   }
   #contacts{
-    top:660vw;
+    top:60vw;
+    position:relative;
+    width:60vw;
   }
   .about{
     font-size: min(3vw, 2rem);
@@ -646,6 +662,8 @@ section::after {
   }
   #schedule{
     left:24vw;
+    width:62vw;
+    position:relative;
   }
   #schedule_heading {
     margin-bottom:5vw;
