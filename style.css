@@ -531,6 +531,7 @@ section::after {
   left: 10vw;
   color: white;
   font-size: larger;
+  z-index: 100;
 }
 
 #sponsors {
@@ -563,6 +564,7 @@ section::after {
   top: calc(750px + 590vw);
   left: 10vw;
   font-size: larger;
+  z-index: 100;
 }
 
 /* OpenType Stylistic Alternates */
@@ -594,11 +596,16 @@ section::after {
   }
 } */
 
+#a_header{
+  z-index:10;
+}
+
 @media (max-width: 912px) {
   .chicken {
     /* top:calc(100vh- 70vw);
     height:70vw; */
     display:none;
+    height:0;
   }
   #cover_panel {
     display:none;
@@ -607,6 +614,9 @@ section::after {
     width:100%;
     overflow-x:hidden;
     overflow-y:hidden;
+  }
+  #faq_header{
+    margin-left: 5vw;
   }
   #panel2v{
     margin-top:0;
