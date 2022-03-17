@@ -11,7 +11,7 @@ function vh(v) {
     return (v * h) / 100;
   }
 window.addEventListener("scroll", function(){
-    console.log(window.innerWidth)
+    // console.log(window.innerWidth)
     if (s.isMobile() || (window.innerWidth < 913)) {
         s.destroy();
     }
