@@ -81,7 +81,7 @@
     }
 
 .imc:hover {
-      animation: pulse 1s infinite;
+      animation: pulse .5s;
       transition: .3s;
     }
   @keyframes pulse {
@@ -107,7 +107,7 @@
   }
 
 .fleetcor:hover {
-    animation: pulse 1s infinite;
+    animation: pulse .5s;
     transition: .3s;
   }
 @keyframes pulse {
@@ -133,7 +133,7 @@
 }
 
 .morningstar:hover {
-  animation: pulse 1s infinite;
+  animation: pulse .5s;
   transition: .3s;
 }
 @keyframes pulse {
@@ -159,7 +159,7 @@
 }
 
 .oi:hover {
-  animation: pulse 1s infinite;
+  animation: pulse .5s;
   transition: .3s;
 }
 @keyframes pulse {
