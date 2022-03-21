@@ -8,9 +8,8 @@ body {
   background-color: rgb(245, 222, 151);
 }
 
-.contact{
-  width:10vw;
-  margin: 2vw;
+p {
+  font-size: 15px;
 }
 
 #container {
