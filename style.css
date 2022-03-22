@@ -238,18 +238,18 @@ section::after {
   /* width: vw; */
   /* z-index:15; */
 }
-#signups-invisible {
+/*#signups-invisible {*/
   /* text-align: center; */
   /* margin:auto; */
-  top: 47vw;
-  position: absolute;
+  /*top: 47vw;
+  position: absolute;*/
 
   /* width: 50%; */
   /* width: vw; */
-  z-index:10;
+  /*z-index:10;
   opacity:0;
   
-}
+}*/
 
 .signup_button {
   border: none;
@@ -644,7 +644,7 @@ section::after {
   #contacts{
     top:60vw;
     position:relative;
-    width:60vw;
+    width:80vw;
   }
   .about{
     font-size: min(3vw, 2rem);
