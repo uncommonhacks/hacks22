@@ -325,7 +325,7 @@ section::after {
   overflow-y: hidden;
 }
 
-.chicken {
+.cloud_move {
   position: fixed;
   top: 50vh;
   width: 100vw;
@@ -605,7 +605,7 @@ section::after {
 }
 
 @media (max-width: 912px) {
-  .chicken {
+  .cloud_move {
     /* top:calc(100vh- 70vw);
     height:70vw; */
     display:none;

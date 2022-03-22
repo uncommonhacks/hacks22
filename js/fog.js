@@ -26,9 +26,9 @@ window.addEventListener("scroll", function(){
             target[i].style.transform='translate('+pos+'px, 0px)';
         }
     if (window.pageYOffset > vw(130)) {
-        document.querySelector('.chicken').style.height=0;
+        document.querySelector('.cloud_move').style.height=0;
     }
     else {
-        document.querySelector('.chicken').style.height=vh(50);
+        document.querySelector('.cloud_move').style.height=vh(50);
     }
 });
