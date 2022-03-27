@@ -53,11 +53,14 @@ body {
 }
 
 #cover_panel{
+  background-image: url("assets/cloud_cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #555f3c;
   position: fixed;
-  background-color: black;
   width:100%;
   height:calc(100vh - 67.2vw);
-  opacity:50%;
+  opacity:100%;
   top:67.2vw;
   /* top:calc(140vw + 67.2vw); */
   z-index: 2;
