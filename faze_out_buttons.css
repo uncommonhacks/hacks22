@@ -158,6 +158,21 @@
   transition: .3s;
 }
 
+.dsi {
+  height: 15vw;
+  width: 50vw;
+  background-image: url('assets/sponsors/dsi.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-width: 0px;
+  background-color: transparent;
+}
+
+.dsi:hover {
+  animation: pulse 1s;
+  transition: .3s;
+}
+
 .signup {
   border: none;
   background-color:rgb(119, 182, 195);
