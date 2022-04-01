@@ -436,6 +436,11 @@ section::after {
 }
 
 @font-face {
+  font-family: "Rockwell";
+  src: url("fonts/ROCK.TTF") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
   font-family: "Heubeul Rough";
   src: url("fonts/HeubeulRough.otf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
